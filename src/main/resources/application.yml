@@ -1,0 +1,11 @@
+#spring:
+#    security:
+#        user:
+#            name: admin
+#            password: admin
+management:
+    endpoints:
+        enabled-by-default: true
+        web:
+            exposure:
+                include: '*'
