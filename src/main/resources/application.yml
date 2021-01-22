@@ -3,9 +3,13 @@
 #        user:
 #            name: admin
 #            password: admin
+spring:
+    boot:
+        admin:
+            client:
+                url: http://localhost:8080
 management:
     endpoints:
-        enabled-by-default: true
         web:
             exposure:
-                include: '*'
+                include: *
